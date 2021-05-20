@@ -1,0 +1,108 @@
+html {
+  background-color: #E6E7C5;
+  padding: 0px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  padding: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0px;
+}
+
+.content {
+  max-width: 750px;
+  margin: auto;
+
+}
+
+p {
+  margin: 0px;
+  margin-top: 20px;
+  color: #212B30;
+  font-size: 20px;
+  font-family: josefin, Times;
+}
+
+h1 {
+  font: 50px rakkas, sans-serif;
+  color: #212B30;
+  text-align: center;
+  margin: 5px;
+}
+
+h2 {
+  font: 25px josefin, sans-serif;
+  color: #9C9990;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px;
+}
+h3 {
+  font: 25px rakkas, sans-serif;
+  color: #212B30;
+  text-align: center;
+  margin: 5px;
+}
+a {
+  color: #13315C;
+}
+h2 a {
+  color: #827E73;
+}
+
+/* top navigation */
+.navbar {
+  margin-top: 10px;
+  background-color: #0B2545;
+  overflow: hidden;
+  max-width: 750px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 5px;
+  position:sticky;
+  position:-webkit-sticky;
+  top:10px;
+}
+
+/* links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #E6E7C5;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 20px;
+  font-family: josefin, Times;
+  height: 20px;
+}
+
+/* navbar links when hovering */
+.navbar a:hover {
+  background-color: #13315C;
+}
+
+/* Add a color to the active/current link */
+.navbar a.current {
+  background-color: #7D8491;
+}
+
+@font-face {
+  font-family: josefin;
+  src: url("../fonts/josefin.ttf");
+}
+@font-face {
+  font-family: josefin;
+  src: url("../fonts/josefin-itl.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: rakkas;
+  src: url("../fonts/rakkas.ttf");
+}
