@@ -85,6 +85,18 @@ h3 {
   text-align: center;
   margin: 5px;
 }
+h4 {
+  font: 20px rakkas, sans-serif;
+  color: #212B30;
+  text-align: center;
+  margin: 5px;
+}
+h5 {
+  font: 20px rakkas, sans-serif;
+  color: #212B30;
+  text-align: center;
+  margin: 5px;
+}
 a {
   color: #13315C;
 }
