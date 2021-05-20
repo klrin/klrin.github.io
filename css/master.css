@@ -7,20 +7,56 @@ html {
 html::-webkit-scrollbar {
     display: none;
 }
+img {
+  width: 100%;
+  height: auto;
+}
+.pfp {
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+  float: left;
+  margin: 10px;
+}
 
+.footer {
+  margin: 30px;
+}
 body {
   padding: 0px;
   padding-left: 10px;
   padding-right: 10px;
   margin: 0px;
 }
-
+::selection {
+  background: burlywood;
+  text-decoration: line-through;
+}
 .content {
   max-width: 750px;
   margin: auto;
 
 }
-
+.footer {
+  margin: auto;
+  max-width: 750px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  font: 25px josefin, sans-serif;
+  color: #9C9990;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 3px;
+  padding: 5px;
+}
+.footer a:hover {
+  color: #212B30;
+  border: 2px solid #212B30;
+}
 p {
   margin: 0px;
   margin-top: 20px;
