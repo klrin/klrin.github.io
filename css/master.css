@@ -1,3 +1,7 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
 html {
   background-color: #E6E7C5;
   padding: 0px;
@@ -18,7 +22,14 @@ img {
   float: left;
   margin: 10px;
 }
-
+.chh  {
+  font-family: senty;
+  font-size: 50px;
+}
+.ch {
+  font-size: 30px;
+  font-family: senty;
+}
 .footer {
   margin: 30px;
 }
@@ -35,6 +46,7 @@ body {
 .content {
   max-width: 750px;
   margin: auto;
+  margin-top: 30px;
 
 }
 .footer {
@@ -46,7 +58,7 @@ body {
 }
 .footer a {
   text-decoration: none;
-  font: 25px josefin, sans-serif;
+  font: 25px senty;
   color: #9C9990;
   font-weight: bold;
   margin: 5px;
@@ -57,56 +69,58 @@ body {
   color: #212B30;
   border: 2px solid #212B30;
 }
+
+/* Content styling -----------------------------------*/
 p {
   margin: 0px;
-  margin-top: 20px;
   color: #212B30;
-  font-size: 20px;
-  font-family: josefin, Times;
+  font-size: 30px;
+  font-family: senty;
 }
 
 h1 {
-  font: 50px rakkas, sans-serif;
+  font: 70px senty;
   color: #212B30;
   text-align: center;
   margin: 5px;
 }
 
 h2 {
-  font: 25px josefin, sans-serif;
+  font: 50px senty;
   color: #9C9990;
   text-align: center;
   font-weight: bold;
   margin: 5px;
 }
 h3 {
-  font: 25px rakkas, sans-serif;
+  font: 40px senty;
   color: #212B30;
   text-align: center;
   margin: 5px;
 }
 h4 {
-  font: 20px rakkas, sans-serif;
+  font: 35px senty;
   color: #212B30;
   text-align: center;
   margin: 5px;
 }
 h5 {
-  font: 20px rakkas, sans-serif;
+  font: 30px senty;
   color: #212B30;
   text-align: center;
+  font-weight: bold;
   margin: 5px;
 }
-a {
+.content a {
   color: #13315C;
+  font-family: senty;
 }
 h2 a {
   color: #827E73;
 }
 
-/* top navigation */
+/* top navigation -------------------------------*/
 .navbar {
-  margin-top: 10px;
   background-color: #0B2545;
   overflow: hidden;
   max-width: 750px;
@@ -123,12 +137,13 @@ h2 a {
   float: left;
   color: #E6E7C5;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
+  padding-bottom: 20px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   border-radius: 20px;
-  font-family: josefin, Times;
   height: 20px;
+  font-family: senty;
 }
 
 /* navbar links when hovering */
@@ -140,7 +155,7 @@ h2 a {
 .navbar a.current {
   background-color: #7D8491;
 }
-
+/* Fonts  --------------------------------------------*/
 @font-face {
   font-family: josefin;
   src: url("../fonts/josefin.ttf");
@@ -153,4 +168,8 @@ h2 a {
 @font-face {
   font-family: rakkas;
   src: url("../fonts/rakkas.ttf");
+}
+@font-face {
+  font-family: senty;
+  src: url("../fonts/senty.ttf");
 }
