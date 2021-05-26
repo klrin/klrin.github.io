@@ -22,13 +22,8 @@ img {
   float: left;
   margin: 10px;
 }
-.chh  {
-  font-family: senty;
-  font-size: 50px;
-}
-.ch {
-  font-size: 30px;
-  font-family: senty;
+.en {
+  font-family: josefin;
 }
 .footer {
   margin: 30px;
@@ -108,12 +103,10 @@ h5 {
   font: 30px senty;
   color: #212B30;
   text-align: center;
-  font-weight: bold;
   margin: 5px;
 }
 .content a {
   color: #13315C;
-  font-family: senty;
 }
 h2 a {
   color: #827E73;
@@ -159,15 +152,6 @@ h2 a {
 @font-face {
   font-family: josefin;
   src: url("../fonts/josefin.ttf");
-}
-@font-face {
-  font-family: josefin;
-  src: url("../fonts/josefin-itl.ttf");
-  font-style: italic;
-}
-@font-face {
-  font-family: rakkas;
-  src: url("../fonts/rakkas.ttf");
 }
 @font-face {
   font-family: senty;
