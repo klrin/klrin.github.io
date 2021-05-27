@@ -6,9 +6,6 @@ html {
   background-color: #E6E7C5;
   padding: 0px;
 }
-html::-webkit-scrollbar {
-    display: none;
-}
 img {
   width: 100%;
   height: auto;
