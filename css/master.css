@@ -5,8 +5,6 @@
 html {
   background-color: #E6E7C5;
   padding: 0px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 html::-webkit-scrollbar {
     display: none;
