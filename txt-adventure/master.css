@@ -1,0 +1,100 @@
+/*Page-specific css:*/
+
+html {
+  background-color: pink;
+}
+
+
+
+
+
+
+.gamebox {
+  height: 500px;
+  width: 400px;
+  min-height: 300px;
+  max-height: 750px;
+  min-width: 200px;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: beige;
+  border: 2px solid black;
+  overflow: hidden;
+  resize: both;
+  font-family: Georgia;
+  position: absolute;
+}
+.header {
+  cursor: move;
+  background: black;
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#turns {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  margin: 0px;
+  color: beige;
+}
+#vers {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  margin: 0px;
+  color: beige;
+}
+.header h1 {
+  font-size: 24px;
+  margin: 0px;
+  color: beige;
+}
+.body {
+  overflow: auto;
+  flex: 1;
+  padding: 10px;
+}
+.footer{
+  border-top: 2px solid black;
+  overflow: hidden;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+}
+.footer p {
+  margin: 0px;
+}
+#left-prompt {
+  width: 30px;
+  margin-left: 10px;
+}
+#txt-entry {
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 16px;
+  font-family: Georgia;
+  width: 100%;
+}
+#txt-entry:focus {
+  outline: none;
+}
+#txt-form {
+  flex: 1;
+  margin-right: 20px;
+}
+.description {
+  margin: 0px;
+  font-style: italic;
+  font-weight: bold;
+}
