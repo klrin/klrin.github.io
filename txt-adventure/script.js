@@ -118,6 +118,7 @@ entryway.feature("wall", "The wall is boring.");
 entryway.feature("floor", "The floor is boring, apart from a bug crawling across it.");
 entryway.feature("ground", "The ground is boring, apart from a bug crawling across it.");
 entryway.feature("bug", "The bug is green, but you also notice 1's and 0's flowing out of it's shell.");
+entryway.feature("shell", "The shell is dull.");
 entryway.feature("self", "You are a bug.");
 entryway.feature("error", "It hurts your eyes to look at the error.");
 entryway.feature("1", "You try to focus on it, but you lose it the stream of numbers.");
