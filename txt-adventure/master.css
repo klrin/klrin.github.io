@@ -10,8 +10,9 @@ html {
 
 
 
-
-
+img {
+  width: 100%;
+}
 .gamebox {
   height: 500px;
   width: 400px;

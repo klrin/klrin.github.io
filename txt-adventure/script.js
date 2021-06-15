@@ -165,6 +165,8 @@ function respond() {
     describe("Time passes...");
   } else if(inputval.includes("look") || inputval.includes("examine")) {
     look(sanitize(inputval, lookwords).replaceAll(" ", ""));
+  } else if(inputval.includes("suck")) {
+    describe("<img src='https://purepng.com/public/uploads/medium/big-chungus-z7y.png'");
   } else {
     describe("Sorry, I don't understand.");
   }
