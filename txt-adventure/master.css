@@ -70,6 +70,7 @@ html {
 }
 .body {
   overflow: auto;
+  word-wrap: break-word;
   flex: 1;
   padding: 10px;
 }
