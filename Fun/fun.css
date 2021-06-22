@@ -1,0 +1,53 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  background: #D9FCE3;
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.loginbox {
+  z-index: 1;
+  border: 2px solid black;
+  height: 100px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.loginbox h1 {
+  flex: 1;
+  font: 30px Georgia;
+  text-align: center;
+}
+.loginbox > input {
+  flex: 1;
+  font: 20px Georgia;
+  border: none;
+  background: transparent;
+  padding: 5px;
+}
+.loginbox > input:focus { outline: none; }
+::placeholder { color: black; opacity: .5;}
+:-ms-input-placeholder { color: black; }
+::-webkit-input-placeholder { color: black; }
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+/*
+Background color: #DDE3CA
+Text color: #220A07
+Accent 1: #6BCE50
+Accent 2: #A0D373
+*/
