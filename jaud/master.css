@@ -1,0 +1,142 @@
+* { padding: 0px; margin: 0px; }
+html, body { height: 100%; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+nav img {
+  height: 1.5em;
+  width: auto;
+}
+.day {
+  background-color: #F8ECC2;
+}
+.night {
+  background-color: #36454F;
+}
+nav {
+  position: fixed;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  background-color: #29304e;
+  padding-left: 2em;
+  padding-right: 2em;
+  width: 15em;
+  border-radius: 1em;
+  justify-content: space-between;
+  top: .5em;
+  left: 50%;
+  margin-left: -9em;
+  transition: .5s ease;
+}
+.navwrap {
+  height: 4em;
+  width: 100%;
+  position: fixed;
+}
+.navwrap:hover nav {
+  top: .5em !important;
+}
+
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  border-radius: 30%;
+  color: #F8ECC2;
+  font-family: cansu;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color .25s ease-out;
+}
+nav a:hover {
+  background-color: #335599;
+}
+th, td {
+  width: auto;
+  text-align: center;
+}
+
+
+
+
+.body {
+  flex: 1;
+}
+.textarea {
+  max-width: 50em;
+  margin: auto;
+  padding: 10px;
+}
+.footer {
+  border-top: 1px solid black;
+  font-family: cansu;
+  max-width: 50em;
+  margin: auto;
+  height: 5em;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.footer a{
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/*  In-text styling */
+
+h1 {
+  margin-top: 1.25em;
+  margin-bottom: 0px;
+  font-family: cansu, arial;
+  color: black;
+  font-size: 35px;
+  line-height: 44px;
+  font-weight: 200;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: cansu, arial;
+  color: gray;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: cansu, arial;
+  color: black;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+p {
+  font-family: baskerville, Arial, sans-serif;
+  color: black;
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 300;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+
+
+@font-face {
+  font-family: cansu;
+  src: url("fonts/cansu/Cansu-Regular.ttf");
+}

@@ -1,53 +1,57 @@
-* {
-  padding: 0px;
-  margin: 0px;
-}
+* { padding: 0px; margin: 0px; }
+
 html {
-  background: #D9FCE3;
-  overflow: hidden;
+  width: 100%;
   height: 100%;
+  background-image: radial-gradient(lightskyblue, lightsteelblue);
+  background-color: lightsteelblue;
 }
+
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .loginbox {
-  z-index: 1;
-  border: 2px solid black;
-  height: 100px;
-  width: 150px;
-  padding: 10px;
-  border-radius: 10px;
+  background: lightskyblue;
   display: flex;
   flex-direction: column;
+  border-radius: 10mm;
+  padding-left: 6mm;
+  padding-right: 6mm;
+  border: 1mm dashed blue;
+  color: black;
+  font: 5mm Verdana;
+  width: 50mm;
 }
-.loginbox h1 {
-  flex: 1;
-  font: 30px Georgia;
-  text-align: center;
-}
-.loginbox > input {
-  flex: 1;
-  font: 20px Georgia;
-  border: none;
-  background: transparent;
-  padding: 5px;
-}
-.loginbox > input:focus { outline: none; }
-::placeholder { color: black; opacity: .5;}
-:-ms-input-placeholder { color: black; }
-::-webkit-input-placeholder { color: black; }
 
-.ball {
-  position: absolute;
-  border-radius: 100%;
-  opacity: 0.7;
+input {
+  margin-bottom: 6mm;
+  padding: 3mm;
+  font: inherit;
+  border: none;
+  outline: none;
+  border-radius: 5mm;
 }
-/*
-Background color: #DDE3CA
-Text color: #220A07
-Accent 1: #6BCE50
-Accent 2: #A0D373
-*/
+p {
+  margin-bottom: 2mm;
+}
+
+#submit {
+  background-color: #4C4348;
+  color: white;
+  cursor: pointer;
+}
+
+.logo {
+  width: 20mm;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6mm;
+  margin-bottom: 6mm;
+}
