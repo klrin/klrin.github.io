@@ -1,5 +1,5 @@
 * { padding: 0px; margin: 0px; }
-html, body { height: 100%; }
+html { height: 100%; background-color: #F8ECC2; transition: .25s ease;}
 
 .content {
   display: flex;
@@ -9,11 +9,18 @@ nav img {
   height: 1.5em;
   width: auto;
 }
-.day {
-  background-color: #F8ECC2;
+.nightmode {
+  background-color: #36454F !important;
+  color: azure !important;
 }
-.night {
-  background-color: #36454F;
+.nighttext {
+  border-color: azure !important;
+}
+.nightshadow {
+
+  -webkit-box-shadow: 0px 0px 10px 0px white;
+  -moz-box-shadow: 0px 0px 10px 0px white;
+  box-shadow: 0px 0px 10px 0px white;
 }
 nav {
   position: fixed;
@@ -21,9 +28,9 @@ nav {
   display: flex;
   align-items: center;
   background-color: #29304e;
-  padding-left: 2em;
-  padding-right: 2em;
-  width: 15em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 18em;
   border-radius: 1em;
   justify-content: space-between;
   top: .5em;
@@ -47,7 +54,7 @@ nav a {
   padding: 3%;
   border-radius: 30%;
   color: #F8ECC2;
-  font-family: cansu;
+  font-family: camsu, cursive;
   text-decoration: none;
   font-size: 18px;
   text-align: center;
@@ -56,21 +63,43 @@ nav a {
 nav a:hover {
   background-color: #335599;
 }
-th, td {
+th, td, table, td a {
   width: auto;
   text-align: center;
+  font-family: camsu, cursive;
+  color: inherit !important;
 }
-
-
+#adjust {
+  position: fixed;
+  background-color: #29304e;
+  transition: background-color .25s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  bottom: .5em;
+  right: .5em;
+  cursor: pointer;
+}
+#adjust:hover {
+  background-color: #335599;
+}
+#adjust img {
+  height: 1.5em;
+  width: auto;
+}
 
 
 .body {
   flex: 1;
 }
 .textarea {
-  max-width: 50em;
+  max-width: 40em;
   margin: auto;
   padding: 10px;
+  transition: .25s ease;
 }
 .footer {
   border-top: 1px solid black;
@@ -92,10 +121,10 @@ th, td {
 /*  In-text styling */
 
 h1 {
-  margin-top: 1.25em;
+  margin-top: 1.5em;
   margin-bottom: 0px;
-  font-family: cansu, arial;
-  color: black;
+  font-family: camsu, cursive;
+  color: inherit;
   font-size: 35px;
   line-height: 44px;
   font-weight: 200;
@@ -105,7 +134,7 @@ h1 {
 h2 {
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: cansu, arial;
+  font-family: camsu, cursive;
   color: gray;
   font-size: 20px;
   line-height: 36px;
@@ -118,15 +147,15 @@ h2 {
 h3 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: cansu, arial;
-  color: black;
+  font-family: camsu, cursive;
+  color: inherit;
   font-size: 20px;
   line-height: 30px;
   font-weight: 300;
 }
 p {
-  font-family: baskerville, Arial, sans-serif;
-  color: black;
+  font-family: baskerville, cursive;
+  color: inherit;
   font-size: 19px;
   line-height: 32px;
   font-weight: 300;
@@ -137,6 +166,6 @@ p {
 
 
 @font-face {
-  font-family: cansu;
-  src: url("fonts/cansu/Cansu-Regular.ttf");
+  font-family: camsu;
+  src: url("../assets/fonts/cansu/Cansu-Regular.ttf");
 }
