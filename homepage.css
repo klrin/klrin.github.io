@@ -1,0 +1,7 @@
+.warning {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline;
+  padding-left: 10px;
+}
