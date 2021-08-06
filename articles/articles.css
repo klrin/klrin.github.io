@@ -2,10 +2,51 @@ html {
   background-color: #ffffee;
 }
 
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 40px;
+  width: 100%;
+  background-color: darkslategray;
+  box-shadow: -1px 1px 5px black;
+}
+nav img {
+  height: 25px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  font-family: incon;
+  color: #ffffee;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+#navwrapper {
+  height: 40px;
+  margin: auto;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-content: space-between;
+}
+
 #textwrapper {
   margin: auto;
   max-width: 500px;
   padding: 5px;
+  padding-top: 60px;
   font-family: incon;
 }
 
@@ -17,6 +58,7 @@ h1 {
   font-size: 30px;
   color: black;
   text-align: center;
+  letter-spacing: -1px;
 }
 h2 {
   margin-top: 0px;
@@ -49,5 +91,5 @@ p {
 
 @font-face {
   font-family: incon;
-  src: url("incon/inconvar.ttf");
+  src: url("inconvar.ttf");
 }
