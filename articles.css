@@ -25,7 +25,7 @@ nav a {
   align-items: center;
   text-align: center;
   text-decoration: none;
-  font-family: incon;
+  font-family: 'Times New Roman', Times, serif;
   color: #ffffee;
   font-weight: bold;
   font-size: 18px;
@@ -47,13 +47,13 @@ nav a {
   max-width: 500px;
   padding: 5px;
   padding-top: 60px;
-  font-family: incon;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
   margin-top: 0px;
   margin-bottom: 5px;
-  font-family: incon;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 30px;
   color: black;
@@ -63,7 +63,7 @@ h1 {
 h2 {
   margin-top: 0px;
   margin-bottom: 20px;
-  font-family: incon;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: normal;
   font-size: 20px;
   color: gray;
@@ -72,7 +72,7 @@ h2 {
 h3 {
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: incon;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   font-size: 20px;
   color: black;
@@ -81,15 +81,10 @@ h3 {
 p {
   margin-top: 0px;
   margin-bottom: 10px;
-  font-family: incon;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: normal;
   font-size: 16px;
   color: black;
   text-align: left;
 }
 
-
-@font-face {
-  font-family: incon;
-  src: url("inconvar.ttf");
-}
