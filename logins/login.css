@@ -43,6 +43,9 @@ input {
     color: white;
     width: 150px;
 }
+input::placeholder {
+    color: beige;
+}
 input:focus {
     border-image: linear-gradient(
       to right, 
