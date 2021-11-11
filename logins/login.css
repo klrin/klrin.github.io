@@ -1,4 +1,5 @@
 * {margin:0px; padding: 0px;} 
+
 html {
     background-image: url("forest1.jpg");
     background-size: cover;
@@ -11,12 +12,11 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
+/* form styling--------------------------------------*/
 form {
-    border: 3px solid yellowgreen;
+    border: 3px solid beige;
     border-radius: 20px;
     padding: 10px;
-    text-align: center;
     background-image: linear-gradient(rgba(17, 75, 0, 0.212),20%, darkolivegreen);
     display: flex;
     align-items: center;
@@ -24,27 +24,36 @@ form {
     font-family: "Lucida Console";
 }
 
+
+
+
+
+
+
+
+
 input {
+    /* border styling */
     border-width: 3px;
     border-style: solid;
     border-image: linear-gradient(
       to right, 
-      white 80%, 
+      beige 80%, 
       transparent
     );
     border-image-slice: 0 0 100% 0;
     outline: none;
+    /* --------------------*/
     background-color: transparent;
     margin: 5px;
     padding: 3px;
-    display: block;
     font-family: inherit;   
     font-size: 18px;
     color: white;
     width: 150px;
-}
-input::placeholder {
-    color: beige;
+    display: block;
+    
+    
 }
 input:focus {
     border-image: linear-gradient(
@@ -55,30 +64,45 @@ input:focus {
     border-image-slice: 0 0 100% 0;
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: white;
-    font-family: inherit;
-    font-size: 18px;
-    color: white;
-    margin-left: 20px;  
+input::placeholder {
+    color: beige;
 }
+
+
+#version {
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    bottom: 10px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #icon {
     width: 60px;
     height: auto;
-    display: block;
-    margin: auto;
-    outline: none;
-    border: none;
 }
 #chev {
     width: 25px;
     height: auto;
     border-radius: 5px;
-    outline: none;
 }
 #chev:focus-visible {
     outline: 3px solid yellowgreen;
