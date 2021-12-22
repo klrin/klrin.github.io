@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Komodo Text Adventure</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="fonta/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main class="window" id="komodogame">
+            <header>
+                <img src="komodo.jpg" alt="K">
+                <p>Game</p>
+                <i class="fas fa-times"></i>
+            </header>
+            <article>
+                <p>the game doesn't work yet</p>
+            </article>
+            <footer><input type="text"></footer>
+        </main>
+        <main class="window" id="notes" style="left: 60px; top: 30px;">
+            <header>
+                <img src="notes.png">
+                <p>Notes</p>
+                <i class="fas fa-times"></i>
+            </header>
+            <article>Unfortunatley, it is unlikely that notes will be usable for some time.</article>
+        </main>
+        <main class="window" id="map" style="left: 110px; top: 40px;">
+            <header>
+                <img src="map.png" alt="M">
+                <p>Map</p>
+                <i class="fas fa-times"></i>
+            </header>
+            <article>This map does not work yet
+                <img src="oldmap.jpg" alt="">
+            </article>
+        </main>
+        <main class="window" id="welcome" style="left: 50%; transform: translateX(-50%); top: 40px;">
+            <header>
+                <img src="welcome.jpg" alt="W">
+                <p>Welcome</p>
+                <i class="fas fa-times"></i>
+            </header>
+            <article>Welcome to Komodo, a text adventure that you can play in browser</article>
+        </main>
+        <div id="aside-div"><aside>
+            <img src="komodo.jpg" alt="K" id="komodogame-task-icon" title="Launch the text adventure!">
+            <img src="map.png" alt="M" id="map-task-icon" title="Open the game map">
+            <img src="notes.png" alt="N" id="notes-task-icon" title="Open your notes">
+            <img src="welcome.jpg" alt="W" id="welcome-task-icon" title="Welcome to Komodo">
+        </aside></div>
+        
+        <div id="loading-overlay"><p>Loading...</p></div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
