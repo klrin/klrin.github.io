@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link href="fonta/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="komodogame/komodo.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -26,9 +27,12 @@
             <article>
                 <p>the game doesn't work yet</p>
             </article>
-            <footer><input type="text"></footer>
+            <footer>
+                <p>></p>
+                <input type="text">
+            </footer>
         </main>
-        <main class="window" id="notes" style="left: 60px; top: 30px;">
+        <main class="window minimized" id="notes" style="left: 60px; top: 30px;">
             <header>
                 <img src="notes.png">
                 <p>Notes</p>
@@ -36,7 +40,7 @@
             </header>
             <article>Unfortunatley, it is unlikely that notes will be usable for some time.</article>
         </main>
-        <main class="window" id="map" style="left: 110px; top: 40px;">
+        <main class="window minimized" id="map" style="left: 110px; top: 40px;">
             <header>
                 <img src="map.png" alt="M">
                 <p>Map</p>
@@ -56,12 +60,13 @@
         </main>
         <div id="aside-div"><aside>
             <img src="komodo.jpg" alt="K" id="komodogame-task-icon" title="Launch the text adventure!">
-            <img src="map.png" alt="M" id="map-task-icon" title="Open the game map">
-            <img src="notes.png" alt="N" id="notes-task-icon" title="Open your notes">
+            <img src="map.png" alt="M" id="map-task-icon" title="Open the game map" class="minimized-tb">
+            <img src="notes.png" alt="N" id="notes-task-icon" title="Open your notes" class="minimized-tb">
             <img src="welcome.jpg" alt="W" id="welcome-task-icon" title="Welcome to Komodo">
         </aside></div>
         
         <div id="loading-overlay"><p>Loading...</p></div>
         <script src="script.js" async defer></script>
+        <script src="komodogame/komodo.js"></script>
     </body>
 </html>

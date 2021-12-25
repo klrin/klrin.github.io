@@ -47,6 +47,7 @@ body {
     display: flex;
     align-items: center;
     border-bottom: 1px solid darkolivegreen;
+    user-select: none !important;
 }
 .window article {
     flex: 1;
@@ -57,7 +58,7 @@ body {
     user-select: none;
 }
 .window footer {
-    height: 40px;
+    height: 35px;
     width: 100%;
     background-color: rgb(201, 201, 201);
     border-top: 1px solid darkolivegreen;
@@ -128,6 +129,7 @@ aside img {
     border-right: 3px solid rgba(0, 0, 0, 0.041);
     border-top: 3px solid rgba(0, 0, 0, 0.041);
     border-bottom: 3px solid black !important;
+    user-select: none;
 }
 aside img:hover {
     border: 3px solid lightgrey;
@@ -204,10 +206,3 @@ aside img:hover {
     height: auto;
 }
 
-#komodogame footer {
-    display: flex;
-}
-#komodogame footer input {
-    flex: 1;
-    height: 100%;
-}

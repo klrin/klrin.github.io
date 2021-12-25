@@ -109,26 +109,27 @@ function toggleWindow(e, elem) { //scheme is #game for window, #game-task-icon f
     let useid = elem.id
     if (elem.tagName.toLowerCase() == "i") {
         useid = elem.closest("main").id
-        windowElem = document.getElementById(useid)
+        windowElem = document.getElementById(useid)  // toggle window minimization if 
         taskbarElem = document.getElementById(useid+"-task-icon")
         windowElem.classList.toggle("minimized")
         taskbarElem.classList.toggle("minimized-tb")
         checkoverlap()
-    } else if (document.getElementById(elem.id.slice(0, -10)).matches(".minimized")) {
+    } else if (document.getElementById(elem.id.slice(0, -10)).matches(".minimized")) { //must be task bar icon, if minimized
         useid = useid.slice(0, -10)
         windowElem = document.getElementById(useid)
         taskbarElem = document.getElementById(useid+"-task-icon")
         windowElem.classList.toggle("minimized")
         taskbarElem.classList.toggle("minimized-tb")
+        zlist.splice(zlist.indexOf(useid), 1)
+        zlist.push(useid)
+        updateZindex()
         checkoverlap()
-    } else {
+    } else { // window is open
         useid = useid.slice(0, -10)
         zlist.splice(zlist.indexOf(useid), 1)
         zlist.push(useid)
         updateZindex()
     }
-    
-
 }
 
 

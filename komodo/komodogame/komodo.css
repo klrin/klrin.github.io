@@ -1,0 +1,32 @@
+#komodogame article{ 
+    background-color: beige;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+#komodogame article p {
+    margin-top: 10px;
+}
+#komodogame footer {
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    align-items: center
+}
+#komodogame footer p {
+    font-size: 17px;
+    color: rgb(30, 32, 27);
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+#komodogame footer input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    padding-left: 5px;
+
+}
