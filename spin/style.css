@@ -142,6 +142,7 @@ input:focus {
 
 .good {
     background-image: url(./rainbow.jpg);
+    background-color: skyblue;
 }
 
 .good h2 {
