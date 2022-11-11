@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./Winwheel.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <title>Tardy Spinner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2>The Fair and Unbiased Tardy Spinner</h2>
+        <div class="center">
+            <input type="text" placeholder="# tardy" style="background-image: linear-gradient( rgba(150, 76, 1, 0.714), transparent)" id="tardy">
+            <input type="text" placeholder="# safe" style="background-image: linear-gradient(    rgba(0, 96, 35, 0.714), transparent)" id="safe">
+            <div id="triangle"></div>
+            <button id="start">SPIN</button>
+            <button id="reset">RESET</button>
+        </div>
+        <div id="spindiv">
+            <canvas id="canvas" width="610" height="610">
+                <p style="color: white" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+            </canvas>
+        </div>
+        <div id="popup">
+            <div>
+                <h2>Tardy</h2>
+            </div>
+        </div>
+        <audio id="f1" src="f4.mp3" preload="auto" style="visibility: hidden;"></audio>
+        <audio id="s1" src="s1.mp3" preload="auto" style="visibility: hidden;"></audio>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
