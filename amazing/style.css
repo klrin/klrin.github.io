@@ -1,0 +1,22 @@
+/* Establishes the main window frame and background*/
+
+html, body {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    color: red;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: comics, Arial, cursive;
+    cursor: progress;
+}
+
+@font-face {
+    font-family: comics;
+    src: url(font/ComicNeue-Bold.ttf);
+}
