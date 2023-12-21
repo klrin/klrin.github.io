@@ -17,13 +17,24 @@
             position: absolute;
             top: 0px;
             left: 0px;
-            background-image: url(assets/fireflies.jpg);
+            background-image: url(fireflies.jpg);
             opacity: 0;
             transition: all 2s;
             background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .visible {
             opacity: 1;
+        }
+        a {
+            background-color: black;
+            padding: 5px;
+            text-decoration: none;
+            font: 16pt Arial;
+            color: orangered;
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -33,5 +44,6 @@
             document.body.classList.add("visible")
         })
     </script>
+    <a href="http://192.168.0.67:32400/web/index.html#!/">Plex</a>
 </body>
 </html>
