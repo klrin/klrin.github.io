@@ -1,0 +1,22 @@
+
+#catsleeping {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  opacity: .75;
+}
+
+.clicktocopy {
+    cursor: pointer;
+}
+
+
+
+
+#potted-plant {
+  width: 68%;
+  height: auto;
+  opacity: .75;
+}
+

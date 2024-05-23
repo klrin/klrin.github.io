@@ -1,0 +1,125 @@
+
+
+:root {
+    --content-width: 600px;
+    --content-padding: 10px;
+    --sidebar-width: 250px;
+}
+body, html {
+    padding: 0px; margin: 0px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#nav-wrap {
+    background-color: rgba(255, 255, 255, 0.692);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.555);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+}
+nav {
+    margin: auto;
+    max-width: var(--content-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav > * {
+    padding: var(--content-padding);
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+nav > *:hover {
+    color: black;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+article {
+    max-width: var(--content-width);
+    padding: 0px var(--content-padding); /* top&bottom left&right */
+    padding-top: 40px;
+}
+article p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+#footer-wrap {
+    border-top: 1px dashed grey;
+}
+footer {
+    margin: auto;
+    max-width: var(--content-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer > * {
+    padding: 17px var(--content-padding);
+}
+
+aside {
+    display: none;
+    width: var(--sidebar-width);
+    height: 80vh;
+    position: sticky;
+    top: 60px;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 1100px) { /* should be --content + 2*--aside
+    /* For desktop: */
+    aside {
+        display: block;
+    }
+}
+
+
+html {
+    --s: 37px; /* control the size*/
+    --c1: #cac8b7b4;
+    --c2: #fef5e9;
+    
+    --t: calc(var(--s)/20);  /* control the thickness */
+    --_c: #0000 calc(98% - var(--t)),var(--c1) calc(100% - var(--t)) 98%,#0000;
+    --_s: calc(2*var(--s)) calc(5*var(--s)/2);
+    --_r0: /var(--_s) radial-gradient(calc(var(--s)/2) at 0    20%,var(--_c));
+    --_r1: /var(--_s) radial-gradient(calc(var(--s)/2) at 100% 20%,var(--_c));
+    background:
+      0 0 var(--_r0),calc(-1*var(--s)) calc(5*var(--s)/4) var(--_r0),
+      var(--s) 0 var(--_r1),0 calc(5*var(--s)/4) var(--_r1),
+      conic-gradient(at var(--t) calc(20% + 2*var(--t)),#0000 75%,var(--c1) 0)
+      calc(var(--t)/-2) calc(var(--s) - var(--t))/var(--s) calc(5*var(--s)/4),
+      repeating-conic-gradient(var(--c2) 0 25%,#0000 0 50%)
+      var(--s) calc(var(--s)/-8)/var(--_s),
+      conic-gradient(from 90deg at var(--t) var(--t),var(--c2) 25%,var(--c1) 0) 
+      calc((var(--s) - var(--t))/2) calc((var(--s) - var(--t))/2)/var(--s) calc(5*var(--s)/4);
+  }
+  
+  article {
+    background-color: rgba(255, 255, 255, 0.377);
+    backdrop-filter: blur(15px);
+    z-index: -1;
+  }
