@@ -7,11 +7,6 @@
   opacity: .75;
 }
 
-.clicktocopy {
-    cursor: pointer;
-}
-
-
 
 
 #potted-plant {
@@ -20,3 +15,23 @@
   opacity: .75;
 }
 
+
+
+
+
+.clicktocopy {
+  position: relative;
+  cursor: pointer;
+}
+.copybox {
+  position: absolute;
+  display: inline;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-wrap: nowrap;  
+  padding: 5px;
+  backdrop-filter: blur(20px);
+  border: 1px solid black;
+  border-radius: 5px;
+}
